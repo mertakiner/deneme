@@ -52,13 +52,13 @@
 }
 
 .box-1 {
-  order: 2;
+  order: 1;
   background-image: url(/photo/bir.jpg);
   background-position: bottom;
 }
 
 .box-2 {
-  order: 1;
+  order: 2;
   background-image: url(/photo/ogle1.png);
   background-position: top;
 }
