@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container div {
+  /*background: #6B0F9C;*/
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px #ccc solid;
+  padding: 10px;
+  text-align: center;
+  /* font-family: "MorePro-Medium", serif; */
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  text-transform: lowercase;
+}
+
+.box {
+  transition: 0.2s;
+  font-size: 40px;
+  align-items: center;
+  background-size: cover;
+  /* background-position: center; */
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.box:hover {
+  opacity: 0.5;
+}
+
+.box.open {
+  flex: 5;
+  font-size: 50px;
+}
+
+.box > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  order: 1;
+  background-image: url(/photo/bir.jpg);
+  background-position: bottom;
+}
+
+.box-2 {
+  order: 2;
+  background-image: url(/photo/ogle1.png);
+  background-position: top;
+}
+
+.box-3 {
+  order: 3;
+  background-image: url(/photo/davet1.png);
+  background-position: 75%;
+}
+
+@media (max-width: 468px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    width: 100%;
+  }
+  .container div {
+    border: 1px #ccc solid;
+    padding: 75px;
+  }
+  .box {
+    transition: 0.2s;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .box:hover {
+    opacity: 0.5;
+  }
+
+  .box-1 {
+    flex: 1;
+    order: 1;
+    background-image: url(/photo/bir.jpg);
+    background-position: 50% 70%;
+    transform: scale(1.1);
+  }
+
+  .box-2 {
+    flex: 1;
+    order: 2;
+    background-image: url(/photo/ogle1.png);
+    background-position: 10% 62%;
+    transform: scale(1.15);
+    
+  }
+
+  .box-3 {
+    flex: 1;
+    order: 3;
+    background-image: url(/photo/davet1.png);
+    background-position: 10% 95%;
+  }
+}
