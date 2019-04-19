@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/ogleyemegi.css" />
+    <link rel="stylesheet" href="js/siparisver.js" />
+    <link rel="stylesheet" href="css/siparisver.css" />
     <script type="text/javascript" src="js/main.js"></script>
     <title>Hande Akiner / Öğle Yemeği</title>
     <link rel="shorcut icon" href="photo/ha.ico" />
@@ -14,7 +16,8 @@
 <body>
 
     <div id="headerWrapper" onclick="window.location.href='index.html'">öğle yemeği</div>
-    <div id="title">Haftanın 2 günü, mevsiminde ve en taze ürünleri kullanarak yapılan sağlıklı yemeklerimizi sıfır atık idealimizle paylaşıyoruz.</div>
+    <div id="title">Haftanın 2 günü, mevsiminde ve en taze ürünleri kullanarak yapılan sağlıklı yemeklerimizi sıfır atık
+        idealimizle paylaşıyoruz.</div>
     <img src="photo/yatay1.png">
     <div id="pageWrapper">
         <div id="foodHeader">
@@ -33,13 +36,34 @@
                 <br /> Ispanaklı Fırın Makarna,
                 <br /> Ekşi mayalı ekmek
             </p>
+            <div id="foodFooter">
+                <button class="open-button" onclick="openForm()"><img src="photo/siparisver.png"></button>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Sipariş Ver</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Vazgeç</button>
+                    </form>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
     <div id="nicin">
         <h3>Niçin Yapıyoruz</h3>
         <p>
-            Kendimiz için yaptığımız sağlıklı yemekleri bizim gibi mutlu olabilecek arkadaşlarımızla da paylaşıyoruz.
+            Kendimiz için yaptığımız sağlıklı yemekleri bizim gibi mutlu olabilecek arkadaşlarımızla da
+            paylaşıyoruz.
             <br> Yemeğimizi paylaştığımız arkadaşlarımızla her öğün doğaya daha az atık çıkartıyoruz.
             <br> Bu hikayemizin detayları
             <a href="https://www.medium.com/@handeakiner" style="color:black">
@@ -62,3 +86,8 @@
         <br>
         <br>
     </div>
+
+    <script src="js/siparisver.js"></script>
+</body>
+
+</html>
