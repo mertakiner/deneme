@@ -36,7 +36,7 @@ h1 {
 }
 
 #pageWrapper {
-    font-family: 'Roboto Mono', monospace;    
+    font-family: 'Roboto Mono', monospace;
     line-height: 2em;
     letter-spacing: 0.8px;
     font-weight: 300;
@@ -48,11 +48,23 @@ h1 {
     text-align: center;
 }
 
+#footer {}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    padding: 5px;
+}
+
 @media (min-width: 468px) {
     .img {
         width: 50%;
     }
+
     #pageWrapper {
         text-align: center;
-    }    
+    }
 }
