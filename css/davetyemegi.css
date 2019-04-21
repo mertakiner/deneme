@@ -6,7 +6,17 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     background: white;
-    /* height: auto; */
+    height: auto;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
 }
 
 h1 {
@@ -29,7 +39,7 @@ h1 {
 }
 
 #pageWrapper {
-    font-family: 'Roboto Mono', monospace;    
+    font-family: 'Roboto Mono', monospace;
     line-height: 2em;
     letter-spacing: 0.8px;
     font-weight: 300;
@@ -39,4 +49,10 @@ h1 {
 
 #footerWrapper {
     text-align: center;
+}
+
+#footer {
+    justify-content: center;
+    display: flex;
+
 }
