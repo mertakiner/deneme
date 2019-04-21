@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 
 .container {
   display: flex;
@@ -41,7 +42,7 @@
   font-size: 50px;
 }
 
-.box > * {
+.box>* {
   margin: 0;
   width: 100%;
   transition: transform 0.5s;
@@ -69,6 +70,13 @@
   background-position: 75%;
 }
 
+#footer {
+  justify-content: center;
+  display: flex;
+  font-style: normal;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 @media (max-width: 468px) {
   .container {
     display: flex;
@@ -76,10 +84,12 @@
     height: 97vh;
     width: 100%;
   }
+
   .container div {
     border: 1px #ccc solid;
     padding: 75px;
   }
+
   .box {
     transition: 0.2s;
     text-align: center;
@@ -107,7 +117,7 @@
     background-image: url('../photo/ogle1.png');
     background-position: 10% 62%;
     transform: scale(1.15);
-    
+
   }
 
   .box-3 {
