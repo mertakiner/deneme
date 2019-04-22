@@ -39,56 +39,59 @@
             </p>
             <div id="foodFooter">
                 <button class="open-button" onclick="openForm()"><img src="photo/siparisver.png"></button>
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
 
-                <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <h1>Login</h1>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
 
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
 
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            <button type="submit" class="btn">Sipariş Ver</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Vazgeç</button>
+                        </form>
+                    </div>
 
-                        <button type="submit" class="btn">Sipariş Ver</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Vazgeç</button>
-                    </form>
+
                 </div>
-
-
             </div>
         </div>
-    </div>
 
-    <div id="nicin">
-        <h3>Niçin Yapıyoruz</h3>
-        <p>
-            Kendimiz için yaptığımız sağlıklı yemekleri bizim gibi mutlu olabilecek arkadaşlarımızla da
-            paylaşıyoruz.
-            <br> Yemeğimizi paylaştığımız arkadaşlarımızla her öğün doğaya daha az atık çıkartıyoruz.
-            <br> Bu hikayemizin detayları
-            <a href="https://www.medium.com/@handeakiner" style="color:black">
-                <strong> blogumdan</strong>
-            </a> inceleyebilirsiniz.
-        </p>
-        <h3>Nasıl Yapıyoruz</h3>
-        <p>
-            Cam yemek kaplarında, diktiğimiz bez çantaları kullanarak yemekleri arkadaşlarımızla buluşturuyoruz.
-            <br> Her yeni siparişte boş kapları alıyoruz, yeni yemekleri teslim ediyoruz.
-        </p>
-    </div>
+        <div id="nicin">
+            <h3>Niçin Yapıyoruz</h3>
+            <p>
+                Kendimiz için yaptığımız sağlıklı yemekleri bizim gibi mutlu olabilecek arkadaşlarımızla da
+                paylaşıyoruz.
+                <br> Yemeğimizi paylaştığımız arkadaşlarımızla her öğün doğaya daha az atık çıkartıyoruz.
+                <br> Bu hikayemizin detayları
+                <a href="https://www.medium.com/@handeakiner" style="color:black">
+                    <strong> blogumdan</strong>
+                </a> inceleyebilirsiniz.
+            </p>
+            <h3>Nasıl Yapıyoruz</h3>
+            <p>
+                Cam yemek kaplarında, diktiğimiz bez çantaları kullanarak yemekleri arkadaşlarımızla buluşturuyoruz.
+                <br> Her yeni siparişte boş kapları alıyoruz, yeni yemekleri teslim ediyoruz.
+            </p>
+        </div>
 
 
-    <div id="footerWrapper">
-        #mevsiminde tüket
-        <br />#atığı azalt
-        <br />#üreticiyi destekle
-        <br />#haftanın 2 günü et tüketme
-        <br>
-        <br>
-    </div>
+        <div id="footerWrapper">
+            #mevsiminde tüket
+            <br />#atığı azalt
+            <br />#üreticiyi destekle
+            <br />#haftanın 2 günü et tüketme
+            <br>
+            <br>
+        </div>
 
-    <script src="js/siparisver.js"></script>
+        <script src="js/siparisver.js"></script>
+    </main>
+    <footer>
+        <p id="footer">© 2019 Hande Akıner</p>
+    </footer>
 </body>
 
 </html>
