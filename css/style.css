@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100i');
+
+.body {
+    display: grid;
+    grid-template-areas: 
+    'boxes'
+    'footer';
+    grid-template-rows: 90% 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.boxes {
+    grid-area: 'boxes';
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows:minmax(auto, auto); */
+    grid-gap: 1em 0.5em 0.5em 1em;
+    height: 90vh;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box > img {
+    display: grid;
+    /* grid-column: 1/3; */
+    object-fit: cover;
+    border-radius: 2%;
+    width: 96%;
+    height: 90vh;
+    justify-items: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    text-transform: lowercase;
+    padding: 10px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    color: black;
+    display: grid;
+}
+
+.box > p {
+    display: grid;
+    text-align: center;
+    padding: 0; 
+    font-size: 40px;  
+    color: white; 
+}
+
+.B1 {   
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.B2 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.B3 {   
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.B4 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.B5 {   
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.B6 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: 'footer';
+    text-align: center;
+    justify-items: center;
+}
+
+@media(max-width: 768px) {
+    .body {
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+        'box' 'p'
+        'img' 'p'
+        'img' 'p'
+        'footer';
+        height: auto;
+    }
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em 1em 1em 0.5em;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .box {
+        display: grid;
+        grid-area: 'box';
+        grid-template-columns: repeat(2, 1fr);
+        height: 40vh;        
+    }
+
+    .box > img {
+        grid-area: 'img';
+        border-radius: 2%;
+        width: 100%;
+        height: 39vh;  
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box > p {
+        grid-area: 'p';
+        text-align: center;
+        justify-items: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    .body > .footer {
+        grid-area: 'footer';
+        text-align: center;
+        justify-items: center;
+    }
+
+    .B1 {   
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .B2 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .B3 {   
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .B4 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .B5 {   
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .B6 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
