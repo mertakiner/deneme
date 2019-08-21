@@ -148,6 +148,7 @@ p {
         margin-left: auto;
         margin-right: auto;
     }
+
     .box > p {
         grid-area: 'p';
         text-align: center;
